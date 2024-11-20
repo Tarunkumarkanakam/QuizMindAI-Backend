@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Generative AI Course Opportunity</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #2dbf9f;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .header img {
+            width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+            /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);*/
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 26px;
+            font-weight: 700;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .content h2 {
+            color: #2dbf9f;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .content ul {
+            margin: 0 0 20px 20px;
+            padding: 0;
+            list-style-type: disc;
+        }
+        .content ul li {
+            margin-bottom: 10px;
+        }
+        .cta-button {
+            display: block;
+            background-color: #2dbf9f;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .cta-button:hover {
+            background-color: #27a38c;
+        }
+        .footer {
+            background-color: #2dbf9f;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        .instructions {
+            background-color: #f9f9f9;
+            border-left: 4px solid #2dbf9f;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .instructions h3 {
+            font-size: 18px;
+            margin-top: 0;
+            color: #2dbf9f;
+        }
+        .instructions ul {
+            margin: 0 0 20px 20px;
+            padding: 0;
+            list-style-type: disc;
+            color: #333333;
+        }
+        .instructions ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            .header h1 {
+                font-size: 22px;
+            }
+            .content h2 {
+                font-size: 18px;
+            }
+            .content p, .content ul li {
+                font-size: 15px;
+            }
+            .cta-button {
+                font-size: 16px;
+                padding: 12px;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+<!--        <img src="logo.png" alt="Navigate Labs Logo">-->
+        <h1>Unlock Your AI Potential</h1>
+    </div>
+    <div class="content">
+        <p>Dear Student,</p>
+        <p><strong>Navigate Labs</strong> is thrilled to offer you a golden opportunity to participate in an <strong>Advanced Technical Assessment</strong>. This assessment will be your gateway to joining the prestigious course, <strong>"Mastering Generative AI."</strong></p>
+        <p>This course is designed to immerse you in the latest generative AI technologies, giving you hands-on experience with cutting-edge Foundation Models (FMs). If you're passionate about AI, this is an opportunity you simply can't miss!</p>
+<!--        <h2>Why Should You Care?</h2>-->
+<!--        <p>Performing well in this assessment is your ticket to securing a spot in a course that could redefine your future. This isn't just another course—it's your chance to master the technologies that are shaping tomorrow.</p>-->
+<!--        <h2>How to Prepare?</h2>-->
+<!--        <ul>-->
+<!--            <li>Review key concepts in coding, algorithms, data structures, system design, and SQL.</li>-->
+<!--            <li>Practice solving complex coding problems and optimizing Python code.</li>-->
+<!--            <li>Get familiar with AI & ML concepts and their real-world applications.</li>-->
+<!--        </ul>-->
+
+        <h2>Assessment Details</h2>
+        <p><strong>Date:</strong> <span th:text="${assessmentDate}"></span></p>
+        <p><strong>Time:</strong> <span th:text="${assessmentTime}"></span></p>
+        <p><strong>Duration:</strong> <span th:text="${assessmentDuration}"></span></p>
+        <p><strong>Login Details:</strong></p>
+        <p>Username: <span th:text="${username}"></span><br>
+            Password: <span th:text="${password}"></span><br>
+            Assessment Portal Link: <a href="http://questai.navigatelabsai.com" style="color:#2dbf9f; text-decoration:none;">http://questai.navigatelabsai.com</a></p>
+        <a href="http://questai.navigatelabsai.com" class="cta-button">Access the Assessment Portal</a>
+
+        <h2>Test Instructions</h2>
+        <div class="instructions">
+            <ul>
+                <li>The test is divided into multiple sections, each with its own set of questions.</li>
+                <li>Each section has a question palette showing all question numbers. The palette drops down when a section is opened.</li>
+                <li>Colors indicate question status:</li>
+                <ul>
+                    <li><span style="color:green;"><strong>Green:</strong></span> Attempted questions.</li>
+                    <li><span style="color:gray;"><strong>Gray:</strong></span> Unvisited questions.</li>
+                    <li><span style="color:red;"><strong>Red:</strong></span> Visited but unattempted questions.</li>
+                </ul>
+                <li>A countdown timer covers the entire test duration. Upon timer completion, users are logged out automatically.</li>
+                <li>Attempting to switch tabs or exit the window logs the user out to prevent malpractice.</li>
+            </ul>
+
+            <h3>Expected User Actions</h3>
+            <ul>
+                <li>Users can open sections to see the question palette.</li>
+                <li>Questions are selected from the palette for answering.</li>
+                <li>Attempting a question changes its color to green.</li>
+                <li>Visiting a question without answering changes its color to red.</li>
+                <li>Unvisited questions remain gray.</li>
+                <li>When ready, click "Proceed" to submit your answers.</li>
+            </ul>
+        </div>
+
+        <p>Prepare well, and seize this incredible opportunity!</p>
+        <p>Sincerely,<br>The Navigate Labs Team</p>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Navigate Labs | All Rights Reserved</p>
+    </div>
+</div>
+</body>
+</html>
